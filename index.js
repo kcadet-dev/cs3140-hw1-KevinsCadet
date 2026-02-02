@@ -32,8 +32,20 @@ function max(arr) {
   return max;
 }
 
+function capitalize(str) {
+  if (str.length === 1) {
+    return str.toUpperCase();
+  }
+
+  else {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+}
+
 // Test Cases
 console.log("Sum:" + sum([1,2,3]))
 console.log("Avg:" + average([1,2,3]))
 console.log("Min:" + min([1,2,3]))
 console.log("Max:" + max([1,2,3]))
+console.log("Cap:" + capitalize("hello"))
+console.log("Cap:" + capitalize("w"))
