@@ -56,6 +56,24 @@ function countVowels(str) {
 
 }
 
+function countVowels(str) {
+ vowels = ['a', 'e', 'i', 'o', 'u'];
+ let count = 0;
+
+ for (const char of str.toLowerCase()) {
+  if (vowels.includes(char)) {
+    count += 1;
+    }
+ }
+
+ return count;   
+
+}
+
+function reverse(str) {
+  return str.split('').reverse().join('');
+}
+
 // Test Cases
 console.log("Sum:" + sum([1,2,3]))
 console.log("Avg:" + average([1,2,3]))
@@ -64,4 +82,6 @@ console.log("Max:" + max([1,2,3]))
 console.log("Cap:" + capitalize("hello"))
 console.log("Cap:" + capitalize("w"))
 console.log("Vowels:" + countVowels("hello"))   
-console.log("Vowels:" + countVowels("gym"))   
+console.log("Vowels:" + countVowels("gym"))
+console.log("Reverse:" + reverse("hello"))
+console.log("Reverse:" + reverse("w"))   
