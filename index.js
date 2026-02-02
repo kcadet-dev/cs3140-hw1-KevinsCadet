@@ -6,6 +6,12 @@ function sum(arr) {
   return total;
 }
 
+function average(arr) {
+  return sum(arr) / arr.length;
+}
+
 
 // Test Cases
 console.log(sum([1,2,3]))
+console.log(average([1,2,3]))
+
